@@ -1,0 +1,30 @@
+body{
+    background: url('/blob-scatter-haikei.svg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    background-color: #f7770ebd;
+    backdrop-filter: blur(10px);
+    color: white;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+}
+.container{
+    margin-top: 75px;
+}
+.card{
+    margin-block-end: 20px;
+    padding: 0%;
+    background-color: transparent;
+}
+.card-img-top{
+    height: 100%;
+}
+.card-body{
+    background-color: #f7770e70;
+    backdrop-filter: blur(10px);
+}
