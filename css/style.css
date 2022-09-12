@@ -11,7 +11,7 @@ header{
     top: 0%;
     width: 100%;
     text-align: center;
-    z-index: 5;
+    z-index: 20;
 }
 .container{
     margin-top: 75px;
@@ -20,11 +20,75 @@ header{
     margin-block-end: 20px;
     padding: 0%;
     background-color: transparent;
+    overflow: hidden;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 0%;
+    transform-origin: left;
+    transition: all .3s ease-out;
+    background-color: rgba(0, 0, 0, 0.623);
+    z-index: 5;
 }
 .card-img-top{
+    position: relative;
     height: 100%;
+    transition: all .3s;
 }
+
 .card-body{
-    background-color: #f7770e70;
+    background-color: #f7770ecb;
     backdrop-filter: blur(10px);
+    color: white;
+    transition: all .3s ease-out;
+    z-index: 10;
+}
+.card-body::before{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 2%;
+    width: 0%;
+    transform-origin: left;
+    transition: all .3s ease-out;
+    background-color: #015aff;
+    z-index: 5;
+}
+h6{
+    color: #7e7e7e;
+}
+.card:hover .card-img-top{
+    transform: scale(1.2);
+}
+.card:hover:before{
+    width: 100%;
+}
+.card:hover .card-body{
+    background-color: white;
+    color: black;
+}
+.card:hover h6{
+    color: #015aff;
+}
+.card:hover .card-body::before{
+    width: 100%;
+}
+.btn{
+    transition: all .3s ease-out;
+}
+.btn span{
+    display: inline-block;
+    transition: all .3s ease-out;
+}
+.btn:hover{
+    padding-right: 20px;
+}
+.btn:hover span{
+    transform: scale(2);
+    transform: translateX(8px);
 }
