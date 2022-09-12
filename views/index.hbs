@@ -23,8 +23,9 @@
             <img src="{{this.urlToImage}}" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">{{this.title}}</h5>
+              <h6 class="card-title">{{this.author}}</h6>
               <p class="card-text">{{this.description}}</p>
-              <a href="{{this.url}}" class="btn btn-danger">{{this.source.name}}</a>
+              <a href="{{this.url}}" class="btn btn-danger">{{this.source.name}} <span>⇾</span></a>
             </div>
           </div>
           {{/each}}
