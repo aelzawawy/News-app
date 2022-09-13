@@ -2,7 +2,7 @@ const request = require("request");
 const express = require("express");
 
 
-const url = `https://newsapi.org/v2/everything?q=tesla&from=2022-08-12&sortBy=publishedAt&apiKey=295f9fadae4447d080297f03f0a64188`;
+const url = `https://newsapi.org/v2/everything?q=tesla&from=2022-08-13&sortBy=publishedAt&apiKey=295f9fadae4447d080297f03f0a64188`;
 
 // Initializing server
 const app = express();
