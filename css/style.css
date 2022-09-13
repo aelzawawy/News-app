@@ -41,7 +41,7 @@ header{
 }
 
 .card-body{
-    background-color: #f7770ecb;
+    background-color: #000000cb;
     backdrop-filter: blur(10px);
     color: white;
     transition: all .3s ease-out;

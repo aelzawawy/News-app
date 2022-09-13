@@ -25,5 +25,5 @@ request({ url, json: true }, (err, res) => {
       data,
     });
   });
-  console.log(typeof data);
+  console.log(`API response: ${typeof data}`);
 });
